@@ -1,0 +1,13 @@
+use testdb;
+insert into customer(id, name) values (100, 'Joel');
+insert into customer(id, name) values (101, 'Boris');
+insert into customer(id, name) values (102, 'Paul');
+
+insert into customer_transaction(id, date, description, total, customer_id) values (116,'2019-10-26 10:20:10', 'Purchase 30' , 210.50, 100);
+insert into customer_transaction(id, date, description, total, customer_id) values (117,'2019-10-25 17:10:10', 'Purchase 31' , 42.80, 100);
+
+insert into customer_transaction(id, date, description, total, customer_id) values (118,'2018-10-17 12:20:10', 'Purchase 200' , 25.60, 102);
+insert into customer_transaction(id, date, description, total, customer_id) values (120,'2018-10-19 15:00:10', 'Purchase 201' , 80.50, 102);
+insert into customer_transaction(id, date, description, total, customer_id) values (122,'2010-10-22 11:30:10', 'Purchase 202' , 116.14, 102);
+
+insert into customer_transaction(id, date, description, total, customer_id) values (102,'2010-10-24 10:20:10', 'Purchase 5' , 200, 101);
